@@ -34,7 +34,7 @@ module.exports = (api, opts, rootOpts) => {
         const lastImportIndex = lines.findIndex(line => line.match(/^import/))
 
         if (opts.addSvgSprite) {
-            lines[lastImportIndex] += `\nimport './icons' // svg-icon`
+            lines[lastImportIndex] += `\nimport './assets/icons' // svg-icon`
         }
 
         mainContent = lines.reverse().join('\n')

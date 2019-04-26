@@ -18,7 +18,7 @@ const SVG_code = `
         .use('svg-sprite-loader')
         .loader('svg-sprite-loader')
         .options({
-        symbolId: 'icon-[name]'
+        symbolId: 'svg-icon-[name]'
         })
     `
 
@@ -39,7 +39,9 @@ module.exports = function (api, opts) {
         vueConfigAST = parse.parse(VueConfigInner)
     } else {
         const vueConfigTem = `// https://cli.vuejs.org/zh/config/
-        
+        /* eslint-disable no-undef */
+        const path = require("path")
+
         module.exports = {
             productionSourceMap: false,
             chainWebpack: config => {}
