@@ -1,6 +1,6 @@
 {
   "name": "vue-cli-plugin-pc",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "基于Vue CLI快速生成项目",
   "repository": {
       "type": "git",
