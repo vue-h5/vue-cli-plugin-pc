@@ -1,5 +1,6 @@
 const fs = require('fs')
-const vueConfig = require('./vue.config.js')
+const vueConfig = require('./bin/vue.config.js')
+const components = require('./bin/components')
 
 module.exports = (api, opts, rootOpts) => {
     // 扩展依赖
@@ -37,6 +38,11 @@ module.exports = (api, opts, rootOpts) => {
             lines[lastImportIndex] += `\nimport './assets/icons' // svg-icon`
         }
 
+        if (opts.addAutoComponents) {
+            components(api)
+            lines[lastImportIndex] += `\nimport './assets/js/autoComponents'`
+        }
+
         mainContent = lines.reverse().join('\n')
         fs.writeFileSync(mainFile, mainContent, {encoding: 'utf-8'})
 
@@ -44,7 +50,7 @@ module.exports = (api, opts, rootOpts) => {
     })
 
     if (opts.addSvgSprite) {
-        api.render('./template', {
+        api.render('./template/SVGSprite', {
             ...opts
         })
     }

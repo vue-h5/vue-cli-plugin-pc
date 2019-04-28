@@ -3,10 +3,13 @@
   "version": "0.1.1",
   "description": "基于Vue CLI快速生成项目",
   "repository": {
-      "type": "git",
-      "url": "https://github.com/vue-h5/vue-cli-plugin-pc.git"
+    "type": "git",
+    "url": "https://github.com/vue-h5/vue-cli-plugin-pc.git"
   },
   "main": "index.js",
   "author": "ektx",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "fs-extra": "^7.0.1"
+  }
 }
