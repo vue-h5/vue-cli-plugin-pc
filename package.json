@@ -2,6 +2,12 @@
   "name": "vue-cli-plugin-pc",
   "version": "0.1.1",
   "description": "基于Vue CLI快速生成项目",
+  "keywords": [
+      "vue.js",
+      "vue-cli-plugin",
+      "svg sprite",
+      "auto components"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/vue-h5/vue-cli-plugin-pc.git"
