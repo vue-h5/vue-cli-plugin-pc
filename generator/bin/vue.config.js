@@ -23,7 +23,6 @@ const SVG_code = `
     `
 
 module.exports = function (api, opts) {
-    console.log(opts)
     const configPath = api.resolve('./vue.config.js')
     const hasConfig = fs.existsSync(configPath)
 
@@ -31,7 +30,6 @@ module.exports = function (api, opts) {
     let vueConfigAST = ''
     let hasSVGSprite = false
     let chainWebpack = {}
-    console.log(hasConfig, 222)
 
     // 有配置 vue.config.js
     if (hasConfig) {

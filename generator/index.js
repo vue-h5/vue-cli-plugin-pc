@@ -14,16 +14,6 @@ module.exports = (api, opts, rootOpts) => {
             result.devDependencies['svg-sprite-loader'] = '^4.1.3'
         }
 
-        // return {
-        //     dependencies: {
-        //         'echarts': '^4.2.1',
-        //         'resize-observer-polyfill': '^1.5.1'
-        //     },
-        //     devDependencies: {
-        //         'compression-webpack-plugin': '^2.0.0',
-        //         // 'svg-sprite-loader': '^4.1.3'
-        //     }
-        // }
         return result
     })
 

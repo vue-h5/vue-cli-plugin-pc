@@ -1,3 +1,1 @@
-module.exports = (api, projectOpts) => {
-    // console.log(api, projectOpts)
-}
+module.exports = (api, projectOpts) => {}
