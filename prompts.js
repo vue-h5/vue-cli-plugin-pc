@@ -10,5 +10,11 @@ module.exports = [
         type: 'confirm',
         message: '添加自动注册组件功能吗？',
         default: true
+    },
+    {
+        name: 'useVuePrettier',
+        type: 'confirm',
+        message: '想要使用我们的@vue/prettier功能吗？',
+        default: false
     }
 ]
